@@ -1,3 +1,26 @@
-Thu Dec  8 14:34:43 EST 2022
+Fri Dec  9 10:59:40 EST 2022
 Start Regression test
 
+Compile 001 elapsed time 348 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_flake -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+
+baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20221205/INTEL/control_flake
+working dir  = /scratch1/NCEPDEV/stmp2/Helin.Wei/FV3_RT/rt_142143/control_flake
+Checking test 001 control_flake results ....
+ Comparing sfcf000.nc ............MISSING baseline
+ Comparing sfcf024.nc ............MISSING baseline
+ Comparing atmf000.nc ............MISSING baseline
+ Comparing atmf024.nc ............MISSING baseline
+ Comparing GFSFLX.GrbF00 ............MISSING baseline
+ Comparing GFSFLX.GrbF24 ............MISSING baseline
+ Comparing GFSPRS.GrbF00 ............MISSING baseline
+ Comparing GFSPRS.GrbF24 ............MISSING baseline
+
+  0: The total amount of wall time                        = 187.947606
+  0: The maximum resident set size (KB)                   = 675168
+
+Test 001 control_flake FAIL
+
+
+REGRESSION TEST WAS SUCCESSFUL
+Sat Dec 10 07:46:47 EST 2022
+Elapsed time: 20h:47m:07s. Have a nice day!
