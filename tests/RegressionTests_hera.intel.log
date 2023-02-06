@@ -1,10 +1,10 @@
-Sat Feb  4 14:24:49 UTC 2023
+Mon Feb  6 17:17:50 UTC 2023
 Start Regression test
 
-Compile 001 elapsed time 622 seconds. -DAPP=S2SWA -DCCPP_SUITES=FV3_GFS_v17_coupled_p8,FV3_GFS_cpld_rasmgshocnsstnoahmp_ugwp -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 001 elapsed time 596 seconds. -DAPP=S2SWA -DCCPP_SUITES=FV3_GFS_v17_coupled_p8,FV3_GFS_cpld_rasmgshocnsstnoahmp_ugwp -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
 
 baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20221205/INTEL/cpld_control_p8
-working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_175211/cpld_control_p8
+working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_220874/cpld_control_p8
 Checking test 001 cpld_control_p8 results ....
  Comparing sfcf021.tile1.nc .........OK
  Comparing sfcf021.tile2.nc .........OK
@@ -69,14 +69,14 @@ Checking test 001 cpld_control_p8 results ....
  Comparing 20210323.060000.out_pnt.ww3 .........OK
  Comparing 20210323.060000.out_grd.ww3 .........OK
 
-  0: The total amount of wall time                        = 336.159716
-  0: The maximum resident set size (KB)                   = 3179836
+  0: The total amount of wall time                        = 334.548711
+  0: The maximum resident set size (KB)                   = 3182336
 
 Test 001 cpld_control_p8 PASS
 
 
 baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20221205/INTEL/cpld_control_p8
-working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_175211/cpld_restart_p8
+working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_220874/cpld_restart_p8
 Checking test 002 cpld_restart_p8 results ....
  Comparing sfcf024.tile1.nc .........OK
  Comparing sfcf024.tile2.nc .........OK
@@ -129,12 +129,12 @@ Checking test 002 cpld_restart_p8 results ....
  Comparing 20210323.060000.out_pnt.ww3 .........OK
  Comparing 20210323.060000.out_grd.ww3 .........OK
 
-  0: The total amount of wall time                        = 191.468787
-  0: The maximum resident set size (KB)                   = 3045024
+  0: The total amount of wall time                        = 191.285281
+  0: The maximum resident set size (KB)                   = 3047040
 
 Test 002 cpld_restart_p8 PASS
 
 
 REGRESSION TEST WAS SUCCESSFUL
-Sat Feb  4 14:54:50 UTC 2023
-Elapsed time: 00h:30m:03s. Have a nice day!
+Mon Feb  6 18:06:41 UTC 2023
+Elapsed time: 00h:48m:52s. Have a nice day!
