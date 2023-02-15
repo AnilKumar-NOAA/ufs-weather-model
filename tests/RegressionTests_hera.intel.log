@@ -1,36 +1,23 @@
-Mon Feb  6 17:17:50 UTC 2023
+Tue Feb 14 21:36:44 UTC 2023
 Start Regression test
 
-Compile 001 elapsed time 596 seconds. -DAPP=S2SWA -DCCPP_SUITES=FV3_GFS_v17_coupled_p8,FV3_GFS_cpld_rasmgshocnsstnoahmp_ugwp -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 001 elapsed time 358 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v17_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
 
-baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20221205/INTEL/cpld_control_p8
-working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_220874/cpld_control_p8
-Checking test 001 cpld_control_p8 results ....
- Comparing sfcf021.tile1.nc .........OK
- Comparing sfcf021.tile2.nc .........OK
- Comparing sfcf021.tile3.nc .........OK
- Comparing sfcf021.tile4.nc .........OK
- Comparing sfcf021.tile5.nc .........OK
- Comparing sfcf021.tile6.nc .........OK
- Comparing atmf021.tile1.nc .........OK
- Comparing atmf021.tile2.nc .........OK
- Comparing atmf021.tile3.nc .........OK
- Comparing atmf021.tile4.nc .........OK
- Comparing atmf021.tile5.nc .........OK
- Comparing atmf021.tile6.nc .........OK
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
- Comparing gocart.inst_aod.20210323_0600z.nc4 .........OK
+baseline dir = /scratch1/NCEPDEV/stmp4/Anil.Kumar/FV3_RT/REGRESSION_TEST_INTEL/control_p8
+working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_50609/control_p8
+Checking test 001 control_p8 results ....
+ Comparing sfcf000.nc .........OK
+ Comparing sfcf021.nc .........OK
+ Comparing sfcf024.nc .........OK
+ Comparing atmf000.nc .........OK
+ Comparing atmf021.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF00 .........OK
+ Comparing GFSFLX.GrbF21 .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF00 .........OK
+ Comparing GFSPRS.GrbF21 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -63,34 +50,20 @@ Checking test 001 cpld_control_p8 results ....
  Comparing RESTART/sfc_data.tile4.nc .........OK
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2021-03-23-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
- Comparing 20210323.060000.out_pnt.ww3 .........OK
- Comparing 20210323.060000.out_grd.ww3 .........OK
 
-  0: The total amount of wall time                        = 334.548711
-  0: The maximum resident set size (KB)                   = 3182336
+  0: The total amount of wall time                        = 165.395309
+  0: The maximum resident set size (KB)                   = 1605492
 
-Test 001 cpld_control_p8 PASS
+Test 001 control_p8 PASS
 
 
-baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20221205/INTEL/cpld_control_p8
-working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_220874/cpld_restart_p8
-Checking test 002 cpld_restart_p8 results ....
- Comparing sfcf024.tile1.nc .........OK
- Comparing sfcf024.tile2.nc .........OK
- Comparing sfcf024.tile3.nc .........OK
- Comparing sfcf024.tile4.nc .........OK
- Comparing sfcf024.tile5.nc .........OK
- Comparing sfcf024.tile6.nc .........OK
- Comparing atmf024.tile1.nc .........OK
- Comparing atmf024.tile2.nc .........OK
- Comparing atmf024.tile3.nc .........OK
- Comparing atmf024.tile4.nc .........OK
- Comparing atmf024.tile5.nc .........OK
- Comparing atmf024.tile6.nc .........OK
- Comparing gocart.inst_aod.20210323_0600z.nc4 .........OK
+baseline dir = /scratch1/NCEPDEV/stmp4/Anil.Kumar/FV3_RT/REGRESSION_TEST_INTEL/control_p8
+working dir  = /scratch1/NCEPDEV/stmp2/Anil.Kumar/FV3_RT/rt_50609/control_restart_p8
+Checking test 002 control_restart_p8 results ....
+ Comparing sfcf024.nc .........OK
+ Comparing atmf024.nc .........OK
+ Comparing GFSFLX.GrbF24 .........OK
+ Comparing GFSPRS.GrbF24 .........OK
  Comparing RESTART/coupler.res .........OK
  Comparing RESTART/fv_core.res.nc .........OK
  Comparing RESTART/fv_core.res.tile1.nc .........OK
@@ -123,18 +96,13 @@ Checking test 002 cpld_restart_p8 results ....
  Comparing RESTART/sfc_data.tile4.nc .........OK
  Comparing RESTART/sfc_data.tile5.nc .........OK
  Comparing RESTART/sfc_data.tile6.nc .........OK
- Comparing RESTART/MOM.res.nc .........OK
- Comparing RESTART/iced.2021-03-23-21600.nc .........OK
- Comparing RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
- Comparing 20210323.060000.out_pnt.ww3 .........OK
- Comparing 20210323.060000.out_grd.ww3 .........OK
 
-  0: The total amount of wall time                        = 191.285281
-  0: The maximum resident set size (KB)                   = 3047040
+  0: The total amount of wall time                        = 85.386402
+  0: The maximum resident set size (KB)                   = 865488
 
-Test 002 cpld_restart_p8 PASS
+Test 002 control_restart_p8 PASS
 
 
 REGRESSION TEST WAS SUCCESSFUL
-Mon Feb  6 18:06:41 UTC 2023
-Elapsed time: 00h:48m:52s. Have a nice day!
+Wed Feb 15 00:44:38 UTC 2023
+Elapsed time: 03h:07m:54s. Have a nice day!
